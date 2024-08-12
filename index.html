@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/06b714e5f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Nabeel</span>  <br> from Isb, Paksita<span>n.</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------- about ---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="justify">I'm Nabeel, a web developer and a dedicated student pursuing a Bachelor's in Computer Science. I specialize in HTML, CSS, JavaScript, jQuery, and Bootstrap 5, and I'm passionate about creating visually appealing and user-friendly websites. My skills enable me to build responsive and interactive web applications. I am committed to delivering quality work and continuously expanding my skill set. Let's collaborate to bring your web ideas to life!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>HTML5 & CSS3</span>
+                                <br>
+                                Structured, Responsive Designs
+                            </li>
+                            <li>
+                                <span>JavaScript & jQuery</span>
+                                <br>
+                                Dynamic, Interactive Elements
+                            </li>
+                            <li>
+                                <span>Bootstrap5</span>
+                                <br>
+                                Rapid, Responsive Development
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>2023 - Current</span>
+                                <br>
+                                NITSEP Full Stack Development
+                            </li>
+                            <li>
+                                <span>Jul 2024 - Aug 2024</span>
+                                <br>
+                                IntegCubes G-11/3 Islamabad
+                            </li>
+                            <li>
+                                <span>2023 - Current</span>
+                                <br>
+                                Fiverr
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2023 - 2027</span>
+                                <br>
+                                Bachelors in Computer Science
+                            </li>
+                            <li>
+                                <span>2023</span>
+                                <br>
+                                HSSC-Intermediate
+                            </li>
+                            <li>
+                                <span>2021</span>
+                                <br>
+                                SSC-Matriculation
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------- services ---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Web Design</h2>
+                    <p class="justify">Transform your ideas into visually appealing websites with my web design services. Using HTML5, CSS3, and Bootstrap 5, I create responsive and user-friendly designs that make your online presence stand out</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p class="justify">Enhance user satisfaction with expertly crafted UI/UX designs. I focus on creating intuitive, engaging interfaces using CSS3 to ensure a seamless and enjoyable user experience.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end Dev</h2>
+                    <p class="justify">Bring your website to life with dynamic front-end development. Using JavaScript, jQuery, and modern tools, I build interactive, responsive web elements that boost functionality and performance.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+            </div>
+            <a href="myservices.html" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------- portfolio ---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Displays real-time weather updates and forecasts based on your location</p>
+                        <a href="Weather App/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work1">
+                    <div class="layer">
+                        <h3>Currency Converter</h3>
+                        <p>Allows you to convert amounts between different currencies using real-time exchange rates</p>
+                        <a href="Currency converter/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work1">
+                    <div class="layer">
+                        <h3>Text to Speech Converter</h3>
+                        <p>Converts written text into spoken audio for accessibility and convenience</p>
+                        <a href="Text to Voice Converter/voiceConverter.html">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="myprojects.html" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------- contact ---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        oyeenabeel07@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-square-phone"></i>
+                        +92 333 5363495
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/nabeel-ahmad-b51a95293/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Nabeel-Ahmad07">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <a href="images/my-resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169 2024 Nabeel Ahmad. All Rights Reserved</p>
+        </div>
+    </div>
+    <!-- ----------- JavaScript Functionality ---------- -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#header {
+    background-color: #ae0012;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+    padding: 5px;
+}
+
+
+#buttonContainer {
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+.toggleButton {
+    float: left;
+    padding: 5px;
+    border: 1px solid #AAA;
+    background-color: #ccc;
+    border-right: none;
+}
+
+.toggleButton:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: paleturquoise;
+}
+
+#output {
+    border-right: 1px solid #AAA;
+}
+
+.highlighted {
+    background-color: aliceblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.panel {
+    float: none;
+}
+
+iframe {
+    border: none;
+}
+
+textarea {
+    border-top: none;
+    resize: none;
+}

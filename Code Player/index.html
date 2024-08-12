@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            Code Player
+        </div>
+        <div id="buttonContainer">
+            <div class="toggleButton active" id="html">HTML</div>
+            <div class="toggleButton" id="css">CSS</div>
+            <div class="toggleButton" id="javascript">JavaScript</div>
+            <div class="toggleButton active" id="output">Output</div>
+        </div>
+    </div>
+    <div class="bodyContainer">
+        <textarea class="panel" id="htmlPanel" placeholder="HTML Panel"></textarea>
+        <textarea class="panel hidden" id="cssPanel" placeholder="CSS Panel"></textarea>
+        <textarea class="panel hidden" id="javascriptPanel" placeholder="JavaScript Panel"></textarea>
+
+        <iframe class="panel" id="outputPanel"></iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
