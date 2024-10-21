@@ -74,6 +74,7 @@ nav {
 
 .justify {
     text-align: justify;
+    line-height: 25px;
 }
 
 .copyright {
@@ -107,16 +108,18 @@ nav {
     }
 
     .services-list div {
-        font-size: 15px;
-        padding: 30px;
+        font-size: 14px;
+        padding: 25px;
     }
 
     .services-list div h2 {
         font-size: 30px;
+        text-align: center;
     }
 
     .justify {
-        text-align: left;
+        text-align: justify;
+        line-height: 20px;
     }
 
     .copyright {

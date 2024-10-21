@@ -85,6 +85,7 @@ nav {
 
 .justify {
     text-align: justify;
+    line-height: 25px;
 }
 
 .copyright {
@@ -120,10 +121,12 @@ nav {
     .work-list div {
         font-size: 15px;
         padding: 30px;
+        text-align: center;
     }
 
     .work-list div h2 {
-        font-size: 30px;
+        font-size: 25px;
+        text-align: center;
     }
 
     .work-list div a {
@@ -134,7 +137,8 @@ nav {
     }
 
     .justify {
-        text-align: left;
+        text-align: justify;
+        line-height: 20px;
     }
 
     .copyright {
