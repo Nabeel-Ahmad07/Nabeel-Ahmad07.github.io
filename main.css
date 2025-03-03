@@ -66,15 +66,57 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 15%;
     font-size: 30px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeSlideIn 1.5s ease-out forwards;
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 35px;
     margin-top: 20px;
+    font-weight: bold;
 }
 
 .header-text h1 span {
     color: #ae0012;
+    font-size: 50px;
+}
+
+.header-text p {
+    font-size: 20px;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    width: 0;
+    display: inline-block;
+    animation: typing 2s steps(12, end) forwards, blink 0.7s infinite;
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 130px;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 /* ----------about----------- */
